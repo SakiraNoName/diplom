@@ -1,0 +1,59 @@
+.logreg {
+  max-width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+}
+
+/* Заголовок формы */
+.logreg h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Поля формы */
+.logreg label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.logreg input,
+.logreg select,
+.logreg textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Ширина колонок */
+
+
+/* Текстовая область */
+.logreg textarea {
+  height: 200px;
+}
+
+/* Кнопка отправки формы */
+.logreg .button {
+  width: 100%;
+  text-align: right;
+}
+
+.logreg .button button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Сообщения об ошибках */
+#error {
+  color: red;
+}

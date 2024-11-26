@@ -1,0 +1,814 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #fff 6.1%, #f7f7f7 68.7%);
+}
+
+.main_content {
+    min-height: calc(100vh - 80px);
+}
+
+.active {
+    border: 2px solid #fc8507;
+    padding: 3px 5px;
+}
+
+
+.logo_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: linear-gradient(0deg, #fc8507 0%, #ffa218 100%);
+    border-radius: 50px;
+}
+
+.logo_div img {
+    border-radius: 25px;
+}
+
+section {
+    width: 100%;
+}
+
+.logo_div img {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    display: grid;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+.header li,
+.header a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.forms {
+    padding: 20px;
+}
+
+.log {
+    max-width: 20%;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 1px solid #fc8507;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.log h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Поля формы */
+.log label {
+    display: block;
+}
+
+.log input,
+.log select,
+.log textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+/* Ширина колонок */
+
+
+/* Текстовая область */
+.log textarea {
+    height: 200px;
+}
+
+/* Кнопка отправки формы */
+.log .button {
+    width: 100%;
+    text-align: right;
+}
+
+.log .button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.log .button button:hover {
+    background-color: #1a5099;
+}
+
+.logreg {
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 1px solid #fc8507;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Заголовок формы */
+.logreg h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Поля формы */
+.logreg label {
+    display: block;
+}
+
+.logreg input,
+.logreg select,
+.logreg textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+/* Ширина колонок */
+
+
+/* Текстовая область */
+.logreg textarea {
+    height: 200px;
+}
+
+/* Кнопка отправки формы */
+.logreg .button {
+    width: 100%;
+    text-align: right;
+}
+
+.logreg .button button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.logreg .button button:hover {
+    background-color: #1a5099;
+}
+
+/* Сообщения об ошибках */
+#error {
+    color: red;
+}
+
+
+.players {
+    border: 2px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    height: 500px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.frm_players {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+
+.frm_players select,
+.frm_players button {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.frm_players button {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.frm_players button:hover {
+    background-color: #1a5099;
+}
+
+.info_players {
+    border: 2px solid #fc8507;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: #343434;
+}
+
+.search {
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-radius: 75px;
+    padding: 25px;
+    background: #f7f7f7;
+}
+
+.search:hover {
+    background-color: white;
+    border: 1px solid rgb(214, 213, 213);
+}
+
+.frmsearch button {
+    width: 10%;
+    height: 20px;
+    position: absolute;
+    right: 80px;
+    top: 15px;
+    background: none;
+    background-image: url("../img/lupa.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: none;
+}
+
+.frmsearch {
+    width: 20%;
+    position: relative;
+}
+
+.main_add {
+    padding: 20px;
+}
+
+.frmAdd {
+    max-width: 600px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 1px solid #fc8507;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Заголовок формы */
+.frmAdd h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Поля формы */
+
+
+.frmAdd input,
+.frmAdd select,
+.frmAdd textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+/* Текстовая область */
+.frmAdd textarea {
+    height: 200px;
+}
+
+/* Кнопка отправки формы */
+.frmAdd button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.frmAdd button:hover {
+    background-color: #1a5099;
+}
+
+.main_tovar {
+    display: flex;
+    justify-content: center;
+}
+
+.tovar_blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tovar {
+    width: 18%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #fc8507;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tovar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.tovar h1 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.tovar p {
+    margin: 5px 0;
+}
+
+.tovar img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.a_tovar:hover {
+    background-color: #f9f9f9;
+}
+
+
+.lk_main {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.frmlk {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #fc8507;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.frmlk label {
+    font-weight: bold;
+    display: block;
+}
+
+.frmlk input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.frmlk button {
+    background-color: #017acd;
+    color: #fff;
+    border: none;
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.frmlk button:hover {
+    background-color: #0162a0;
+}
+
+.tovari_admin button {
+    background-color: #017acd;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.tovari_admin input,
+.tovari_admin select
+{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.frmlk img {
+    margin-top: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.main_tovar_info {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+.a_korz {
+    background-color: red;
+    color: white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.tovar_img {
+    width: 40%;
+}
+.tovar_info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .16);
+    width: 40%;
+    border: 1px solid #fc8507;
+    padding: 20px;
+}
+
+.tovar_text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tovar_text li {
+    font-size: 23px;
+}
+
+.tovar_text a {
+    text-decoration: none;
+}
+
+.tovar_info_korz{
+    padding: 20px;
+}
+.main_searc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.application_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.application_main {
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
+    overflow: auto;
+    padding: 20px;
+}
+.page-title {
+    text-align: center;
+}
+
+.mainslider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slideshow-container{
+    width: 30%;
+}
+
+.mainslider h1 {
+    text-align: center;
+}
+
+.main_admin {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 20px;
+}
+
+.chat {
+
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-arrow-color: #000000;
+    scrollbar-base-color: #228B22;
+}
+
+.chat_main {
+    width: 15%;
+}
+.chat_main a{
+    text-decoration: none;
+    color: black;
+}
+.application_lk h1 {
+    text-align: center;
+    
+}
+
+.message {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.application_lk {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+.frm_chat button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px ;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.frm_chat button:hover {
+    background-color: #0056b3;
+}
+
+.frm_chat {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #fc8507;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.tovari_admin button:hover {
+    background-color: #0056b3;
+}
+
+.frm_chat input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.tovari_admin {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+
+
+.main_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.catalog_block {
+    padding: 10px;
+    text-align: center;
+}
+
+.catalog_block img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.catalog_block a {
+    display: block;
+    margin-top: 10px;
+}
+
+.main_catalog a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main_catalog a:hover {
+    text-decoration: underline;
+}
+
+.main_korz {
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.info_korz {
+    flex-direction: column;
+    border: 1px solid #fc8507;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tovar_info_korz img {
+    height: 250px;
+}
+
+.buttonkorz button {
+    background-color: #4183c4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.buttonkorz button:hover {
+    background-color: #1a5099;
+}
+.frmkorz{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+.frmkorz textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.frmkorz select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.buttonkorz button:last-child {
+    background-color: #ff7f0e;
+}
+
+.buttonkorz button:last-child:hover {
+    background-color: #d45e00;
+}
+
+.frmkorz button:last-child:hover {
+    background-color: #d45e00;
+}
+
+.buttonkorz {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.frmkorz button {
+    background-color: #4183c4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ff7f0e;
+}
+
+.application_block {
+    padding: 16px;
+    background-color: #efefef;
+    border: 1px solid #fc8507;
+    border-radius: 4px;
+}
+.application_block button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px ;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.application_block button:hover {
+    background-color: #0056b3;
+}
+.application_block select{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+.application_block .label {
+    font-weight: bold;
+}
+
+.application_block .value {
+    font-weight: normal;
+}
+
+.mySlides img {
+    height: 400px;
+}
+
+.slideBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fc8507;
+    border-radius: 25px;
+    padding: 20px;
+}
+.main_tovarsCatalog{
+    display: flex;
+    justify-content: center;
+}
+.maps{
+    padding: 20px;
+}
+.foot_info{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding: 20px;
+    color: white;
+    font-size:23px;
+}
+.foot_block{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+}
+.foot_block ul,
+.foot_block a
+{
+text-decoration: none;
+list-style: none;
+color: white;
+}
+.slideBox a {
+text-decoration: none;
+color: black;
+}
